@@ -1,5 +1,6 @@
 import Filter from 'components/filter';
 import SalesByDate from 'components/sales-by-date';
+import SalesSummary from 'components/sales-summary';
 import './App.css';
 import Header from './components/header';
 
@@ -10,6 +11,9 @@ function App() {
   <div className="app-container">
     <Filter/>
     <SalesByDate/>
+    <div className="sales-overview-container">
+      <SalesSummary/>
+    </div>
   </div>
   </>
    
