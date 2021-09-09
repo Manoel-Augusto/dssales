@@ -15,7 +15,7 @@ export const buildPieChartConfig = (labels: string[] = [], name: string) => {
         fontFamily: 'Roboto, sans-serif'
       }
     },
-    //colors: ['#3e82f7', '#04d182', '#ffc107', '#ff6b72'],
+    
     legend: {
       show: true,
       floating: false,

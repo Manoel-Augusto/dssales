@@ -5,14 +5,14 @@ import flatpickrLib from 'flatpickr';
 import { Portuguese } from 'flatpickr/dist/l10n/pt';
 import './styles.css';
 import React, { useState } from 'react';
-import { filterData, Gender } from 'types';
+import { FilterData, Gender } from 'types';
 
 flatpickrLib.localize(Portuguese);
 type Props={
-    onFilterChange: (filter:filterData)=>void;
+    onFilterChange: (filter:FilterData)=>void;
 }
 const Filter = ({onFilterChange}:Props) => {
-  const [dates, setDates] = useState<Date[]>();
+  const [dates, setDates] = useState<Date[]>([]);
   const [gender, setGender] = useState<Gender>();
 
   const onChangeDate = (dates: Date[]) => {
